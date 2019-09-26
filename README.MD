@@ -4,19 +4,25 @@ HOW TO USE THIS APPLICATION
 Step 1: Upload the folder to your server
 
 Step 2:
+
 	i) While composer installed in your system, Open your CLI to download the composer dependancies:- 
-	<code>composer install</code> 
+	   composer install
 	ii) Open the .env file and Configure your database & Mail support
 
 If you are importing database(lincoln.sql), you may skip step 3
 
 Step 3: 
+
 	i) Open the AppServiceProvider.php (Located at App\Providers) and comment this line at the boot function;
-          <code> self::globalVals(1); </code>
+           self::globalVals(1);
+	  
 	ii) Open your CLI, navigate to your root folder and type:- php artisan migrate 
-	iii) Uncomment the line at 3(i) above <code>(self::globalVals(1))</code> after a successive migration.
+	
+	iii) Uncomment the line at 3(i) above (self::globalVals(1)) after a successive migration.
+	
 	iv) You may want to seed the Roles, Menus, Users, Settings and Submenus test data by running:- 
-	<code> php artisan db:seed </code> at your CLI. 
+	    php artisan db:seed at your CLI. 
+	
 	Alternatively, you may want to do it all together in step 3(ii) above by running:- 
 	<code> php artisan migrate:refresh --seed </code>
 
