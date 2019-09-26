@@ -4,7 +4,8 @@ HOW TO USE THIS APPLICATION
 Step 1: Upload the folder to your server
 
 Step 2:
-	i) While composer installed in your system, Open your CLI to download the composer dependancies:- composer install 
+	i) While composer installed in your system, Open your CLI to download the composer dependancies:- 
+	<code>composer install</code> 
 
 	ii) Open the .env file and Configure your database & Mail support
 
@@ -19,9 +20,13 @@ Step 3:
 
 	iii) Uncomment the line at 3(i) above (self::globalVals(1)) after a successive migration.
 
-	iv) You may want to seed the Roles, Menus, Users, Settings and Submenus test data by running:- php artisan db:seed at your CLI. Alternatively, you may want to do it all together in step 3(ii) above by running:- php artisan migrate:refresh --seed
+	iv) You may want to seed the Roles, Menus, Users, Settings and Submenus test data by running:- 
+	<code>php artisan db:seed</code> at your CLI. 
+	Alternatively, you may want to do it all together in step 3(ii) above by running:- 
+	<code>php artisan migrate:refresh --seed</code>
 
-Step 4: Clear all cache and views:- php artisan config:cache,then, php artisan view:clear
+Step 4: Clear all cache and views:- 
+<code>php artisan config:cache</code>,then, <code>php artisan view:clear</code>
 
 Step 5: You can now loggin as follows;
 	
