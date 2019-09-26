@@ -1,4 +1,4 @@
-## HOW TO USE THIS APPLICATION
+HOW TO USE THIS APPLICATION
 ===========================================================================================
 # Step 1
 - Upload the folder to your server
