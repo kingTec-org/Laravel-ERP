@@ -6,8 +6,7 @@ Step 1: Upload the folder to your server
 Step 2:
 
 	i) While composer installed in your system, Open your CLI to download the composer dependancies:- 
-	
-	 			<em>composer install</em>
+<code>composer install</code>
 				
 	ii) Open the .env file and Configure your database & Mail support
 
@@ -16,17 +15,27 @@ If you are importing database <code>(lincoln.sql)</code>, you may skip step 3
 Step 3: 
 
 	i) Open the AppServiceProvider.php (Located at App\Providers) and comment this line at the boot function;
-           <b>self::globalVals(1);</b>
+<code>self::globalVals(1);</code>
 	  
-	ii) Open your CLI, navigate to your root folder and type:- <b>php artisan migrate</b>
+	ii) Open your CLI, navigate to your root folder and type:- 
 	
-	iii) Uncomment the line at 3(i) above <b>(self::globalVals(1))</b> after a successive migration.
+<code>php artisan migrate</code>
+	
+	iii) Uncomment the line at 3(i) above
+	
+<code>(self::globalVals(1))</code>
+
+	after a successive migration.
 	
 	iv) You may want to seed the Roles, Menus, Users, Settings and Submenus test data by running:- 
-	    <b>php artisan db:seed</b> at your CLI. 
+	
+<code>php artisan db:seed</code> 
+
+	at your CLI. 
 	
 	Alternatively, you may want to do it all together in step 3(ii) above by running:- 
-	<b> php artisan migrate:refresh --seed </b>
+
+<code> php artisan migrate:refresh --seed </code>
 
 Step 4: Clear all cache and views:- 
 <code>php artisan config:cache</code>,then, <code>php artisan view:clear</code>
