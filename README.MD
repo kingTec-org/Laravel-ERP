@@ -6,7 +6,9 @@ Step 1: Upload the folder to your server
 Step 2:
 
 	i) While composer installed in your system, Open your CLI to download the composer dependancies:- 
-	 			composer install
+	
+	 			<em>composer install</em>
+				
 	ii) Open the .env file and Configure your database & Mail support
 
 If you are importing database <code>(lincoln.sql)</code>, you may skip step 3
